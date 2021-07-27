@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#070707"
+        android:gravity="center"
+        android:hint="SIGN IN"
+        android:shadowColor="#1B1919"
+        android:textAlignment="center"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#FFFEFE"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#3C3939"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#3C3939"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#FFFCFC"
+        android:textIsSelectable="false"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:text="Remember me"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:textColor="#F6F2F2">
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|clip_vertical|fill_vertical"
+            android:layout_marginTop="28dp"
+            android:text="sign in"
+            android:textColor="#000000"
+            app:backgroundTint="#FBFBFB" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:text="FORGOT USERNAME/PASSWORD"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>
+</ScrollView>
+      

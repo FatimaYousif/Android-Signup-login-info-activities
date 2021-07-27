@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#070707"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:hint="@string/sign_up_it_s_free"
+        android:shadowColor="#1B1919"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#FFFEFE"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:autoText="true"
+        android:background="#3C3939"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:shadowColor="#64DD17"
+        android:textColor="#F1F1F1"
+        android:textColorHint="#FCFFFF"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="#3C3939"
+        android:ems="10"
+        android:hint="YOUR EMAIL ADDRESS"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="#3C3939"
+        android:ems="10"
+        android:hint="PASSWORD - MINIMUM 6 CHARACTERS"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#FFFCFC"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+      />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="#3C3939"
+        android:ems="10"
+        android:hint="CONFIRM PASSWORD"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+       />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#070707"
+            android:shadowColor="#1B1919"
+            android:text="@string/date_of_birth"
+            android:textColor="#F6F0F0"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:height="50dp"
+            android:ems="10"
+            android:hint="MALE"
+            android:inputType="numberSigned"
+            android:textColorHint="#535151"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:background="#070707"
+            android:hint="GENDER"
+            android:shadowColor="#1B1919"
+            android:textColor="#F6F0F0"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned5"
+            android:layout_width="77dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:height="50dp"
+            android:ems="10"
+            android:hint="FEMALE"
+            android:inputType="numberSigned"
+            android:textColorHint="#535151"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextDate"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="123dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:textColorHint="#535151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="By signing up your are accepting FY terms and conditions"
+            android:layout_marginTop="20dp"
+            android:textColor="#F6F2F2">
+
+        </CheckBox>
+
+ </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|clip_vertical|fill_vertical"
+            android:layout_marginTop="10dp"
+            android:text="Sign UP"
+            android:textColor="#000000"
+            app:backgroundTint="#FBFBFB" />
+    </FrameLayout>
+
+</LinearLayout>
